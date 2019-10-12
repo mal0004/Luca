@@ -114,6 +114,12 @@ Discord.on('message', function (message) {
 });
 
 Discord.on('message', function (message) {
+	if (message.content.startsWith('!nitro')) 		{
+		return message.reply('You got pranked');
+          }
+});
+
+Discord.on('message', function (message) {
 	if (message.content.startsWith('!')) 		{
 		return message.reply('Unknown command!');
           }
